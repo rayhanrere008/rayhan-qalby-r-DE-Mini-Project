@@ -53,4 +53,4 @@ Pastikan Anda telah menginstal Tools dan Library yang diperlukan:
 ### Kesimpulan
 Dengan mengikuti langkah-langkah di atas, Anda dapat melakukan proyek ETL dan visualisasi data secara lokal menggunakan Python dan tools yang sesuai. Pastikan untuk menyesuaikan langkah-langkah ini sesuai dengan kebutuhan dan karakteristik proyek Anda.
 
-Selamat mengerjakan proyek!
+Selamat mengerjakan proyek!!
