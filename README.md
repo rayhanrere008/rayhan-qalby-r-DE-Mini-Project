@@ -6,7 +6,7 @@ Project ini memiliki tujuan untuk melakukan ETL (Extract, Transform, Load). Deng
 ## Tech Stacks
 Daftar tools dan framework yang digunakan dalam project ini:
 - Python
-- Library in Python: Pandas, sqlite3, requests, json, numpy, re, seaborn, matplotlib.pyplot, plotly.express, Levenshtein, BeautifulSoup, sklearn, google cloud, sqlalchemy
+- Library in Python: Pandas, sqlite3, requests, json, re, seaborn, matplotlib.pyplot, plotly.express, Levenshtein, BeautifulSoup, sklearn, google cloud, sqlalchemy, airflow
 - Jupyter Notebook
 - Google Cloud Storage
 - MySQL
@@ -15,6 +15,7 @@ Daftar tools dan framework yang digunakan dalam project ini:
 - JSON 
 - CSV
 - DB
+- Apache Airflow
 - other
 
 ## Architecture Diagram
@@ -49,6 +50,13 @@ Pastikan Anda telah menginstal Tools dan Library yang diperlukan:
 1. Gunakan Pandas untuk membaca data yang telah diolah
 2. Gunakan Matplotlib, Plotly.express, Seaborn  untuk membuat visualisasi data yang relevan berupa analisis statistik deskriptif, analisis korelasi, analisis distribusi, analisis tren, analisis perbandingan, atau analisis lain yang informatif. Diagram bisa berupa diagram batang, diagram lingkaran, atau plot garis.
 3. Sertakan judul yang jelas dan label sumbu untuk memperjelas visualisasi.
+
+### Langkah 6 : Apache Airflow
+Dalam project ini juga menerapkan proses ETL menggunakan apache airflow namun hanya pada bagian extract population_data from API dan load data final to Google Cloud Storage. Stepnya :
+1. Install Apache Airflow
+2. Put DAG file to dag folder
+3. Jalankan Airflow
+4. Cek hasilnya di Airflow UI (localhost:8080)
 
 ### Kesimpulan
 Dengan mengikuti langkah-langkah di atas, Anda dapat melakukan proyek ETL dan visualisasi data secara lokal menggunakan Python dan tools yang sesuai. Pastikan untuk menyesuaikan langkah-langkah ini sesuai dengan kebutuhan dan karakteristik proyek Anda.
