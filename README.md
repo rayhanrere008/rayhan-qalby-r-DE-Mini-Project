@@ -6,7 +6,7 @@ Project ini memiliki tujuan untuk melakukan ETL (Extract, Transform, Load). Deng
 ## Tech Stacks
 Daftar tools dan framework yang digunakan dalam project ini:
 - Python
-- Library in Python: Pandas, sqlite3, requests, json, re, seaborn, matplotlib.pyplot, plotly.express, Levenshtein, BeautifulSoup, sklearn, google cloud, sqlalchemy, airflow
+- Library in Python: Pandas, sqlite3, requests, json, re, seaborn, matplotlib.pyplot, plotly.express, Levenshtein, BeautifulSoup, sklearn, google cloud, sqlalchemy, airflow, openai
 - Jupyter Notebook
 - Google Cloud Storage
 - MySQL
@@ -51,7 +51,14 @@ Pastikan Anda telah menginstal Tools dan Library yang diperlukan:
 2. Gunakan Matplotlib, Plotly.express, Seaborn  untuk membuat visualisasi data yang relevan berupa analisis statistik deskriptif, analisis korelasi, analisis distribusi, analisis tren, analisis perbandingan, atau analisis lain yang informatif. Diagram bisa berupa diagram batang, diagram lingkaran, atau plot garis.
 3. Sertakan judul yang jelas dan label sumbu untuk memperjelas visualisasi.
 
-### Langkah 6 : Apache Airflow
+### Langkah 6 : Implementation AI
+1. Buat key openai di Naga AI
+2. Masukkan key di file .env
+3. Buat script integrasi dengan key dan function prompt AI
+4. Masukkan prompt AI tentang analisis tren, distribusi, korelasi, dan perbandingan dari dataset final
+5. Menampilkan hasil prompt AI
+
+### Langkah 7 : Apache Airflow
 Dalam project ini juga menerapkan proses ETL menggunakan apache airflow namun hanya pada bagian extract population_data from API dan load data final to Google Cloud Storage. Stepnya :
 1. Install Apache Airflow
 2. Put DAG file to dag folder
